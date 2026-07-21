@@ -787,3 +787,770 @@ const BAREFOOT = [
     hacer:'Empieza con 5-10 min de carrera con minimalista, alternando con tu calzado habitual. Sube un 10% semanal como MÁXIMO.',
     crit:'Aquí no hay meta: la progresión lenta es permanente. La mayoría de lesiones del barefoot vienen de correr demasiado pronto.' },
 ]
+
+/* ── AMPLIACIÓN POR MATERIAL ─────────────────────────────────── */
+EX.push(
+/* MAZAS · el peso lejos de la mano crea palanca: por eso exige tanto */
+{id:'club-360',cap:'movilidad',pat:'rotacion',mat:'maza',lvl:3,seg:60,
+ n:'360 con maza',s:'El círculo completo alrededor del cuerpo',
+ why:'Recorre el rango completo del hombro con carga en un patrón circular continuo. Es el movimiento que más moviliza la articulación glenohumeral y la escápula a la vez, algo que ninguna máquina reproduce.',
+ steps:['Maza vertical delante del pecho, dos manos','Déjala caer por un lado hacia la espalda','Rodea la cabeza sin tocarla y sube por el otro lado','Ritmo constante, sin tirones'],
+ tip:'Empieza con maza muy ligera y ve despacio. Si la maza te lleva a ti en vez de tú a ella, pesa demasiado.'},
+{id:'club-inside',cap:'control',pat:'rotacion',mat:'maza',lvl:2,seg:55,
+ n:'Circular interior',s:'Control fino del hombro',
+ why:'El círculo interior obliga a controlar el momento angular en un radio corto. Trabaja el manguito rotador de forma específica en un patrón cerrado, ideal como puente antes de los círculos amplios.',
+ steps:['Maza en una mano, codo cerca del cuerpo','Traza un círculo pequeño junto al hombro','Muñeca firme, el movimiento sale del hombro','10 círculos por sentido y lado'],
+ tip:'Si la muñeca se dobla, la maza pesa demasiado o el círculo es muy grande. Reduce antes de progresar.'},
+{id:'club-pendulum',cap:'movilidad',pat:'rotacion',mat:'maza',lvl:1,seg:50,
+ n:'Péndulo con maza',s:'La entrada al mundo de las mazas',
+ why:'Es el patrón más simple: balanceo controlado en un solo plano. Enseña a gestionar el peso desplazado sin exigir movilidad de hombro completa, así que es la puerta de entrada correcta.',
+ steps:['Maza con las dos manos, brazos extendidos','Balancea de un lado a otro como un péndulo','Deja que el peso marque el ritmo','Costillas cerradas, sin arquear la lumbar'],
+ tip:'Este es el primer ejercicio de mazas que deberías dominar. No pases a los círculos hasta que salga fluido.'},
+{id:'club-front',cap:'fuerza',pat:'empuje',mat:'maza',lvl:2,seg:55,sets:3,reps:10,
+ n:'Extensión frontal',s:'Hombro y core en cadena',
+ why:'Extender la maza al frente multiplica la palanca sobre el hombro y obliga al core a impedir que el cuerpo se venza. Es fuerza isométrica de core disfrazada de ejercicio de brazo.',
+ steps:['Maza vertical junto al pecho, dos manos','Extiende los brazos al frente lentamente','Mantén 2 s con la maza horizontal','Vuelve controlado'],
+ tip:'Si la lumbar se arquea al extender, has perdido el core. Mete el coxis y reduce el recorrido.'},
+{id:'club-squat',cap:'fuerza',pat:'rodilla',mat:'maza',lvl:2,seg:60,sets:3,reps:12,
+ n:'Sentadilla con maza',s:'Contrapeso que mejora la técnica',
+ why:'Sujetar la maza al frente actúa de contrapeso y permite bajar más erguido, lo que enseña la posición correcta de sentadilla. Además el core trabaja en anti-flexión todo el rato.',
+ steps:['Maza sujeta al pecho con las dos manos','Baja la sentadilla manteniendo el pecho alto','Codos por dentro de las rodillas abajo','Sube empujando el suelo'],
+ tip:'Notarás que bajas más que sin maza. El contrapeso es un truco clásico para aprender la sentadilla profunda.'},
+
+/* GOMAS · resistencia variable, barato y muy versátil */
+{id:'band-facepull',cap:'fuerza',pat:'traccion',mat:'goma',lvl:1,seg:50,sets:3,reps:15,fix:['hombro'],
+ n:'Face pull',s:'El mejor ejercicio postural que existe',
+ why:'Trabaja rotadores externos, deltoides posterior y trapecio medio a la vez. Es de los ejercicios con mejor retorno para la salud del hombro y para contrarrestar la postura adelantada.',
+ steps:['Goma anclada a la altura de la cara','Tira llevando las manos hacia las orejas','Codos altos y separados','Rota las manos hacia atrás al final'],
+ tip:'La clave es la rotación externa al final. Sin ella es un remo alto, y pierdes el beneficio para el manguito.'},
+{id:'band-press',cap:'fuerza',pat:'empuje',mat:'goma',lvl:1,seg:50,sets:3,reps:12,
+ n:'Press de pecho con goma',s:'Empuje con resistencia progresiva',
+ why:'La goma aumenta la resistencia según se estira, así que la parte final del recorrido (donde eres más fuerte) recibe más carga. Es un perfil de resistencia distinto al del peso libre y complementario.',
+ steps:['Goma por detrás de la espalda, a la altura del pecho','Empuja al frente extendiendo los brazos','Junta las manos al final','Vuelve resistiendo la goma'],
+ tip:'No sueltes de golpe. La fase de vuelta, controlada, es donde está buena parte del estímulo.'},
+{id:'band-goodmorning',cap:'fuerza',pat:'cadera',mat:'goma',lvl:2,seg:55,sets:3,reps:15,fix:['lumbar'],
+ n:'Buenos días con goma',s:'Bisagra con carga ligera',
+ why:'Enseña el patrón de bisagra con una resistencia que crece al final, justo donde el glúteo debe apretar. Es una forma segura de cargar la cadena posterior sin material pesado.',
+ steps:['Goma bajo los pies y sobre la nuca','Bisagra: cadera atrás, espalda recta','Baja hasta notar tensión en isquios','Sube apretando el glúteo'],
+ tip:'Espalda recta siempre. Si se redondea, acorta el recorrido: es preferible poco rango bien hecho.'},
+{id:'band-pullthrough',cap:'fuerza',pat:'cadera',mat:'goma',lvl:1,seg:50,sets:3,reps:15,
+ n:'Pull through',s:'Aprender a usar el glúteo',
+ why:'La dirección de la resistencia (horizontal) hace que el glúteo tenga que trabajar en toda la extensión de cadera. Es el mejor ejercicio para quien no siente el glúteo en la sentadilla.',
+ steps:['Goma anclada baja, por detrás y entre las piernas','Bisagra de cadera cogiendo la goma','Extiende la cadera apretando el glúteo','No arquees la lumbar al final'],
+ tip:'El movimiento termina cuando la cadera está extendida, no cuando la espalda se arquea. Aprieta glúteo, no lumbar.'},
+{id:'band-lateral',cap:'control',pat:'rodilla',mat:'goma',lvl:1,seg:50,sets:3,reps:12,fix:['cintilla','rodilla'],
+ n:'Sentadilla con goma en rodillas',s:'Activar glúteo medio bajo carga',
+ why:'La goma tira de las rodillas hacia dentro y obliga al glúteo medio a resistir. Corrige el valgo (rodilla hacia dentro) que está detrás de muchos dolores de rodilla y cintilla.',
+ steps:['Goma por encima de las rodillas','Sentadilla empujando activamente las rodillas hacia fuera','Baja controlado sin dejar que se metan','Sube manteniendo la separación'],
+ tip:'Si las rodillas se meten hacia dentro, la goma es demasiado dura o falta fuerza. Baja resistencia antes que técnica.'},
+
+/* PESO · kettlebell y mancuernas */
+{id:'kb-goblet',cap:'fuerza',pat:'rodilla',mat:'peso',lvl:1,seg:55,sets:3,reps:12,
+ n:'Sentadilla goblet',s:'La mejor sentadilla para aprender',
+ why:'El peso al pecho actúa de contrapeso y permite mantener el tronco erguido, lo que facilita la profundidad y protege la lumbar. Es la forma más segura de cargar la sentadilla.',
+ steps:['Peso sujeto al pecho con las dos manos','Baja manteniendo el pecho alto','Codos por dentro de las rodillas abajo','Sube empujando el suelo con todo el pie'],
+ tip:'Si los talones se levantan, te falta movilidad de tobillo. Trabájala: es la causa, no la sentadilla.'},
+{id:'kb-press',cap:'fuerza',pat:'empuje',mat:'peso',lvl:2,seg:55,sets:3,reps:8,
+ n:'Press militar',s:'Empuje vertical y estabilidad de core',
+ why:'Elevar peso por encima de la cabeza exige movilidad de hombro, estabilidad escapular y un core que impida arquear la lumbar. Es un examen de todo el tren superior en un solo gesto.',
+ steps:['Peso a la altura del hombro, codo debajo','Aprieta glúteo y abdomen antes de empujar','Empuja arriba hasta extender el codo','Baja controlado a la posición inicial'],
+ tip:'Si tienes que arquear la espalda para subir, te falta movilidad de hombro. Trabaja el deslizamiento en pared primero.'},
+{id:'kb-row',cap:'fuerza',pat:'traccion',mat:'peso',lvl:1,seg:55,sets:3,reps:12,
+ n:'Remo a una mano',s:'Espalda y antirrotación',
+ why:'Además de trabajar dorsal y romboides, obliga al core a impedir que el tronco rote. Dos estímulos en uno, y expone diferencias entre lados que los ejercicios bilaterales esconden.',
+ steps:['Apoya una mano y una rodilla en un banco','Espalda plana y paralela al suelo','Tira del peso llevando el codo atrás','Sin girar el tronco: caderas cuadradas'],
+ tip:'Inicia con el omóplato, no con la mano. Si el tronco rota, baja el peso.'},
+{id:'kb-carry',cap:'control',pat:'locomocion',mat:'peso',lvl:1,seg:60,
+ n:'Paseo del granjero',s:'Lo más funcional que existe',
+ why:'Caminar cargando peso trabaja agarre, core, hombro y postura a la vez, en el patrón más cotidiano que hay. Además la fuerza de agarre es uno de los marcadores de longevidad mejor documentados.',
+ steps:['Un peso en cada mano (o uno solo para versión desigual)','Hombros atrás y abajo, pecho alto','Camina con pasos cortos y controlados','60 s manteniendo la postura'],
+ tip:'Con un solo peso el core trabaja el doble para no inclinarte. Es una progresión excelente.'},
+{id:'kb-clean',cap:'potencia',pat:'cadera',mat:'peso',lvl:3,seg:50,sets:3,reps:8,
+ n:'Cargada',s:'Potencia y coordinación',
+ why:'Transfiere la potencia de la cadera al tren superior en un gesto coordinado. Entrena la capacidad de producir fuerza rápida en cadena, que es como el cuerpo se mueve en la vida real.',
+ steps:['Bisagra de cadera con el peso entre las piernas','Lanza la cadera y guía el peso pegado al cuerpo','Recíbelo en el hombro, codo abajo','Baja con control repitiendo la bisagra'],
+ tip:'Si el peso te golpea la muñeca, lo estás lanzando en arco. Debe subir pegado al cuerpo, casi rozando.'},
+{id:'kb-tgu-half',cap:'control',pat:'core',mat:'peso',lvl:2,seg:70,
+ n:'Media levantada turca',s:'La turca, por partes',
+ why:'La primera mitad de la levantada turca contiene lo esencial: estabilidad de hombro bajo carga y control de tronco al rodar. Aprenderla por separado es cómo se enseña bien la turca completa.',
+ steps:['Tumbado, peso arriba con un brazo extendido','Rueda al codo y luego a la mano','Eleva la cadera formando un puente','Vuelve deshaciendo el camino'],
+ tip:'Mira el peso todo el rato. La vista fija en la carga es lo que mantiene el hombro estable.'},
+
+/* POTENCIA y RESISTENCIA · estaban muy escasas */
+{id:'broad-jump',cap:'potencia',pat:'cadera',mat:'none',lvl:2,seg:40,sets:3,reps:6,
+ n:'Salto horizontal',s:'Potencia en el plano de avance',
+ why:'El salto horizontal expresa la potencia de cadera en la dirección en la que corres, a diferencia del salto vertical. Y la caída entrena la absorción de impacto, que protege rodillas.',
+ steps:['De pie, pies a la anchura de las caderas','Bisagra rápida y salta hacia delante','Cae con las dos piernas, rodillas flexionadas','Absorbe el impacto en silencio'],
+ tip:'Prioriza la caída sobre la distancia. Un salto corto bien absorbido vale más que uno largo aterrizando rígido.'},
+{id:'pogo',cap:'potencia',pat:'locomocion',mat:'none',lvl:1,seg:40,
+ n:'Saltos de tobillo',s:'Rigidez elástica para correr',
+ why:'Entrena la capacidad elástica del tendón de Aquiles y el pie, que es lo que devuelve energía en cada zancada. Mejora la economía de carrera sin acumular volumen de kilómetros.',
+ steps:['Saltos pequeños y rápidos en el sitio','Rodillas casi rectas: el rebote sale del tobillo','Contacto con el suelo muy breve','30 s continuos'],
+ tip:'Piensa en rebotar, no en saltar. Cuanto menos tiempo en el suelo, mejor el estímulo elástico.'},
+{id:'mountain-climber',cap:'resistencia',pat:'core',mat:'none',lvl:1,seg:45,
+ n:'Escalador',s:'Pulso alto y core',
+ why:'Combina posición de plancha con movimiento rápido de cadera. Sube el pulso enseguida y a la vez exige al core que impida que la cadera se hunda o rebote.',
+ steps:['Posición de plancha alta, manos bajo hombros','Lleva una rodilla al pecho y alterna','Cadera baja y estable, sin subir el culo','Ritmo sostenible, no máximo'],
+ tip:'Si la cadera sube y baja, has perdido el core. Baja el ritmo hasta que se mantenga quieta.'},
+{id:'skater',cap:'potencia',pat:'rodilla',mat:'none',lvl:2,seg:45,
+ n:'Saltos de patinador',s:'Potencia lateral y estabilidad',
+ why:'Casi todo el entrenamiento va hacia delante y atrás. El plano lateral queda olvidado, y es donde se lesionan tobillos y rodillas. Este salto entrena precisamente esa dirección.',
+ steps:['Salta lateralmente de un pie al otro','Aterriza sobre una pierna y estabiliza','Rodilla alineada con el pie al caer','Alterna con ritmo controlado'],
+ tip:'Aguanta un instante en cada aterrizaje. La estabilidad al caer es el objetivo, no la velocidad.'},
+{id:'jump-rope',cap:'resistencia',pat:'locomocion',mat:'none',lvl:1,seg:60,
+ n:'Comba (o simulada)',s:'Cardio y coordinación',
+ why:'Trabaja la elasticidad del pie y el tobillo mientras sube el pulso, con muy poco impacto por salto. Si no tienes comba, el gesto simulado da buena parte del beneficio.',
+ steps:['Saltos pequeños sobre la punta de los pies','Muñecas hacen girar, no los brazos','Rodillas ligeramente flexionadas','60 s continuos'],
+ tip:'Salta lo justo para pasar la cuerda. Saltar alto cansa antes y castiga más las articulaciones.'},
+{id:'squat-hold',cap:'resistencia',pat:'rodilla',mat:'none',lvl:1,seg:60,
+ n:'Sentadilla isométrica',s:'Resistencia de cuádriceps',
+ why:'El trabajo isométrico construye resistencia local y tolerancia al esfuerzo sostenido, y suele tolerarse bien cuando el movimiento dinámico molesta. Útil también en dolor de rodilla anterior.',
+ steps:['Espalda apoyada en la pared, muslos paralelos al suelo','Rodillas a 90 grados, sobre los tobillos','Respira con normalidad, no aguantes el aire','Mantén 45-60 s'],
+ tip:'Si tiembla, es normal. Si duele la rótula, sube un poco la posición hasta que no moleste.'}
+)
+
+/* ── Ejercicios de apoyo para las nuevas zonas ───────────────── */
+EX.push(
+{id:'neck-iso',cap:'control',pat:'core',mat:'none',lvl:1,seg:50,fix:['cervical'],
+ n:'Isométricos de cuello',s:'Fuerza cervical sin movimiento',
+ why:'El cuello responde bien a la carga isométrica cuando el movimiento molesta. Fortalecer la musculatura cervical profunda reduce la recurrencia del dolor de cuello mejor que solo estirar.',
+ steps:['Mano en la frente, empuja la cabeza contra ella','Sin que la cabeza se mueva, 10 s','Repite en los laterales y en la nuca','2 rondas por dirección'],
+ tip:'La cabeza no se mueve: es fuerza contra resistencia. Sin dolor: si duele, reduce la presión.'},
+{id:'chin-tuck-neck',cap:'movilidad',pat:'core',mat:'none',lvl:1,seg:45,sets:3,reps:10,fix:['cervical'],
+ n:'Retracción cervical',s:'Deshacer el cuello adelantado',
+ why:'Activa los flexores cervicales profundos, que se apagan con la postura de pantalla. Es el ejercicio base para el dolor cervical de origen postural.',
+ steps:['Sentado o de pie, mirada al frente','Lleva la barbilla hacia dentro (doble mentón)','Sin bajar la cabeza ni mirar abajo','Mantén 5 s y suelta'],
+ tip:'No es bajar la barbilla al pecho: es desplazarla hacia atrás en horizontal. Imagina que te empujan la frente.'},
+{id:'wrist-mob',cap:'movilidad',pat:'empuje',mat:'none',lvl:1,seg:50,fix:['muneca','codo'],
+ n:'Movilidad de muñeca',s:'Preparar el apoyo de manos',
+ why:'La muñeca soporta el peso en plancha, flexión y muchos ejercicios de suelo. Sin preparación, es la primera que se queja. Cargarla progresivamente es lo que la hace tolerante.',
+ steps:['A cuatro apoyos, palmas en el suelo','Balancea el peso adelante y atrás despacio','Gira las manos: dedos hacia fuera, hacia dentro, hacia ti','30 s en cada posición'],
+ tip:'Si duele mucho, hazlo con los puños cerrados o sobre los nudillos hasta ganar tolerancia.'},
+{id:'wrist-ecc',cap:'fuerza',pat:'empuje',mat:'goma',lvl:2,seg:55,sets:3,reps:15,fix:['codo','muneca'],
+ n:'Excéntrico de antebrazo',s:'Para epicondilitis',
+ why:'El trabajo excéntrico lento del antebrazo es la base del tratamiento de la epicondilitis (codo de tenista). Es el mismo principio que en el Aquiles: carga progresiva sobre el tendón.',
+ steps:['Antebrazo apoyado, muñeca fuera del borde','Sube la muñeca con ayuda de la otra mano','Baja SOLO con la mano afectada, muy lento (4 s)','15 repeticiones lentas'],
+ tip:'La bajada lenta es el ejercicio. Molestia leve es aceptable; dolor que crece al día siguiente, no.'},
+{id:'ankle-alphabet',cap:'movilidad',pat:'rodilla',mat:'none',lvl:1,seg:50,fix:['tobillo'],
+ n:'Abecedario con el tobillo',s:'Movilidad en todos los planos',
+ why:'Tras un esguince el tobillo pierde rango y, sobre todo, propiocepción. Moverlo en todas las direcciones restaura el mapa articular antes de volver a cargarlo.',
+ steps:['Sentado, pierna extendida y pie en el aire','Dibuja el abecedario con el dedo gordo','Movimiento amplio pero sin dolor','Una vuelta completa por pie'],
+ tip:'Sin dolor. Si una letra molesta, reduce el tamaño del recorrido en esa dirección.'},
+{id:'ankle-balance-eyes',cap:'control',pat:'core',mat:'none',lvl:2,seg:60,fix:['tobillo','cintilla'],
+ n:'Equilibrio con perturbación',s:'Propiocepción avanzada de tobillo',
+ why:'El déficit propioceptivo tras un esguince es lo que hace que se repita. Entrenar el equilibrio con perturbaciones reduce de forma consistente la tasa de recaída.',
+ steps:['De pie sobre una pierna, descalzo','Mueve el otro brazo y pierna en el aire','Progresión: cierra los ojos','30 s por lado'],
+ tip:'El objetivo no es no moverse: es corregir rápido cuando te desequilibras. Esa corrección es el entrenamiento.'},
+{id:'hip-airplane',cap:'control',pat:'cadera',mat:'none',lvl:3,seg:60,fix:['cadera','cintilla'],
+ n:'Avión de cadera',s:'Rotación controlada en apoyo',
+ why:'Entrena la rotación interna y externa de cadera en carga, sobre una sola pierna. Es de los mejores ejercicios para la estabilidad de cadera y para el pinzamiento femoroacetabular leve.',
+ steps:['Bisagra sobre una pierna, tronco paralelo al suelo','Abre la cadera rotando hacia el techo','Cierra rotando hacia dentro','Lento y controlado, 8 por lado'],
+ tip:'Difícil de entrada. Apóyate en una pared con una mano hasta que salga limpio.'},
+{id:'copenhagen',cap:'fuerza',pat:'cadera',mat:'none',lvl:3,seg:50,fix:['aductor'],
+ n:'Plancha de aductores',s:'Prevención de pubalgia',
+ why:'El ejercicio Copenhagen es de los pocos con evidencia sólida en prevención de lesión de aductores, muy común en deportes de cambio de dirección. Fortalece el aductor en rango largo.',
+ steps:['Tumbado de lado, pierna de arriba apoyada en un banco','Eleva la cadera formando línea con el cuerpo','Empieza con la rodilla apoyada (versión corta)','15-20 s por lado'],
+ tip:'Empieza con la versión de rodilla. La de pie extendido es muy exigente y provoca agujetas fuertes.'},
+{id:'nordic-curl',cap:'fuerza',pat:'cadera',mat:'none',lvl:3,seg:50,fix:['isquios'],
+ n:'Curl nórdico',s:'Prevención de rotura de isquios',
+ why:'El curl nórdico es la intervención con más evidencia para reducir lesiones de isquiotibiales, con reducciones muy notables en revisiones. Trabaja el isquio en excéntrico a alta demanda.',
+ steps:['De rodillas con los tobillos sujetos','Baja el tronco despacio, cuerpo recto','Frena todo lo que puedas con los isquios','Amortigua con las manos y vuelve'],
+ tip:'Al principio bajarás poco antes de caer, es normal. Progresa el control, no la profundidad.'},
+{id:'glute-bridge',cap:'fuerza',pat:'cadera',mat:'none',lvl:1,seg:50,sets:3,reps:15,fix:['lumbar','isquios','rodilla'],
+ n:'Puente de glúteo',s:'La base de la extensión de cadera',
+ why:'Activa el glúteo mayor en un patrón seguro y sin carga axial. Es el punto de partida cuando la lumbar o la rodilla no toleran cargas mayores, y la base para progresar.',
+ steps:['Boca arriba, rodillas flexionadas, pies apoyados','Mete el coxis y eleva la cadera','Aprieta el glúteo arriba 2 s','Baja controlado sin apoyar del todo'],
+ tip:'Si notas los isquios acalambrarse, acerca los pies al glúteo y aprieta más el abdomen.'},
+{id:'scap-pushup',cap:'control',pat:'empuje',mat:'none',lvl:1,seg:50,sets:3,reps:12,fix:['hombro','escapula'],
+ n:'Flexión escapular',s:'Control del omóplato',
+ why:'Aísla el movimiento de la escápula (protracción y retracción) sin doblar los codos. Fortalece el serrato anterior, clave para que el hombro se mueva sin pinzarse.',
+ steps:['Posición de plancha alta, brazos rectos','Sin doblar codos, junta los omóplatos','Ahora sepáralos empujando el suelo','12 repeticiones lentas'],
+ tip:'El recorrido es pequeño: unos centímetros. Si doblas los codos, ya es una flexión normal.'}
+)
+
+/* ── READAPTACIÓN: cuerpo completo ──────────────────────────── */
+REHAB.push(
+{ id:'cervical', n:'Cuello / cervicales', s:'Tensión o dolor cervical, típico de pantalla',
+  causa:'Casi siempre postural y por falta de resistencia de la musculatura cervical profunda, no por una estructura dañada. La postura mantenida es el factor, y el remedio es moverse más y fortalecer.',
+  red:'Dolor tras traumatismo, hormigueo o pérdida de fuerza en el brazo, mareo intenso, dolor de cabeza brusco y distinto a lo habitual.',
+  fases:[
+    { n:'1 · Calmar', dur:'1-2 semanas', ex:['chin-tuck-neck','thoracic-rot','cat-cow'],
+      hacer:'Muévete a menudo: lo peor es la postura mantenida. Pantalla a la altura de los ojos. Evita cargar por encima de la cabeza de momento.',
+      crit:'Girar la cabeza a ambos lados sin molestia' },
+    { n:'2 · Fortalecer', dur:'2-4 semanas', ex:['neck-iso','chin-tuck-neck','scap-pushup','band-facepull'],
+      hacer:'Isométricos de cuello y trabajo escapular 3-4 veces por semana.',
+      crit:'Isométricos 10 s en las 4 direcciones sin dolor' },
+    { n:'3 · Integrar', dur:'2-4 semanas', ex:['band-facepull','scap-pull','thoracic-rot','row-inverted'],
+      hacer:'Añade tracción y trabajo de espalda alta. Reintroduce press por encima de la cabeza progresivamente.',
+      crit:'Remo y face pull sin reacción al día siguiente' },
+    { n:'4 · Mantener', dur:'continuo', ex:['band-facepull','chin-tuck-neck','thoracic-rot'],
+      hacer:'2 sesiones por semana de por vida si trabajas con pantallas.',
+      crit:'Mantenimiento' } ]},
+{ id:'hombro-general', n:'Hombro (general)', s:'Molestia al elevar, cargar o dormir del lado',
+  causa:'Lo más común es una sobrecarga del manguito rotador junto a un control escapular deficiente. El hombro tolera mucha carga si la escápula acompaña; cuando no lo hace, aparece el pinzamiento.',
+  red:'Pérdida de fuerza marcada, dolor nocturno que despierta, incapacidad de elevar el brazo, dolor tras caída.',
+  fases:[
+    { n:'1 · Calmar', dur:'1-2 semanas', ex:['wall-slide','ext-rotation','scap-pushup'],
+      hacer:'Evita lo que reproduce el dolor, sobre todo por encima de la cabeza. Sigue moviendo en rango sin dolor.',
+      crit:'Elevar hasta la horizontal sin dolor' },
+    { n:'2 · Estabilizar', dur:'2-4 semanas', ex:['ext-rotation','band-facepull','scap-pull','scap-pushup'],
+      hacer:'Rotación externa y control escapular, 3 veces por semana.',
+      crit:'3×15 rotación externa sin reacción posterior' },
+    { n:'3 · Cargar', dur:'3-4 semanas', ex:['row-inverted','band-press','kb-row','pushup-incline'],
+      hacer:'Empuje y tracción con rango controlado, progresando carga.',
+      crit:'Flexión inclinada y remo sin molestia' },
+    { n:'4 · Volver', dur:'continuo', ex:['kb-press','club-pendulum','band-facepull'],
+      hacer:'Reintroduce trabajo por encima de la cabeza y mazas de forma gradual.',
+      crit:'Mantén el preventivo 2 veces por semana' } ]},
+{ id:'codo', n:'Codo / antebrazo', s:'Dolor en la cara externa o interna del codo',
+  causa:'Tendinopatía por sobreuso (epicondilitis). El tendón no se ha adaptado a la carga acumulada. Como en todo tendón, la respuesta es carga progresiva, no reposo.',
+  red:'Dolor tras traumatismo, hinchazón marcada, bloqueo articular, hormigueo en los dedos.',
+  fases:[
+    { n:'1 · Calmar', dur:'1-2 semanas', ex:['wrist-mob','scap-pushup'],
+      hacer:'Reduce lo que provoca el dolor (agarres sostenidos, movimientos repetidos de muñeca). No pares del todo.',
+      crit:'Coger objetos cotidianos sin dolor agudo' },
+    { n:'2 · Cargar el tendón', dur:'4-6 semanas', ex:['wrist-ecc','wrist-mob','band-facepull'],
+      hacer:'Excéntricos de antebrazo a diario o en días alternos. Es lento: cuenta en semanas, no días.',
+      crit:'3×15 excéntricos sin dolor al día siguiente' },
+    { n:'3 · Reintroducir', dur:'2-4 semanas', ex:['wrist-ecc','row-inverted','kb-carry'],
+      hacer:'Añade agarre y tracción progresivamente. El paseo del granjero es excelente aquí.',
+      crit:'Cargar peso en la mano sin reacción' },
+    { n:'4 · Mantener', dur:'continuo', ex:['wrist-ecc','kb-carry','wrist-mob'],
+      hacer:'Mantén excéntricos 2 veces por semana. Los tendones tardan en olvidar.',
+      crit:'Mantenimiento' } ]},
+{ id:'muneca', n:'Muñeca', s:'Molestia al apoyar las manos en el suelo',
+  causa:'Suele ser falta de tolerancia a la carga en extensión, no lesión. La muñeca no está acostumbrada a soportar peso, y en calistenia se le pide de golpe.',
+  red:'Dolor tras caída (descartar fractura), hormigueo persistente en los dedos, hinchazón.',
+  fases:[
+    { n:'1 · Preparar', dur:'1-2 semanas', ex:['wrist-mob'],
+      hacer:'Apoya sobre los puños o usa paralelas para quitar la extensión mientras ganas tolerancia.',
+      crit:'Apoyar las palmas 30 s sin molestia' },
+    { n:'2 · Cargar', dur:'2-4 semanas', ex:['wrist-mob','wrist-ecc','scap-pushup'],
+      hacer:'Aumenta el tiempo en apoyo progresivamente. Añade excéntricos de antebrazo.',
+      crit:'Plancha alta 45 s cómodo' },
+    { n:'3 · Volver', dur:'2-3 semanas', ex:['pushup-incline','plank','kb-carry'],
+      hacer:'Reintroduce flexiones y trabajo en el suelo.',
+      crit:'Flexiones sin molestia en la muñeca' },
+    { n:'4 · Mantener', dur:'continuo', ex:['wrist-mob','kb-carry'],
+      hacer:'Calienta siempre la muñeca antes de trabajo de suelo.',
+      crit:'Mantenimiento' } ]},
+{ id:'cadera', n:'Cadera / ingle', s:'Pinzamiento o molestia profunda en la ingle',
+  causa:'Puede ser déficit de control rotacional, falta de fuerza de aductores o un pinzamiento femoroacetabular. El trabajo de fuerza en rangos tolerables suele mejorar los síntomas.',
+  red:'Dolor que irradia, bloqueo, chasquido doloroso, dolor nocturno constante, cojera.',
+  fases:[
+    { n:'1 · Calmar', dur:'1-2 semanas', ex:['glute-bridge','psoas-lunge','hip-90-90'],
+      hacer:'Evita rangos que pincen (sentadilla muy profunda). Trabaja en rango cómodo.',
+      crit:'Caminar y subir escaleras sin molestia' },
+    { n:'2 · Fortalecer', dur:'3-4 semanas', ex:['clamshell','glute-bridge','copenhagen','monster-walk'],
+      hacer:'Glúteo y aductores. El Copenhagen empieza en versión corta.',
+      crit:'Copenhagen 15 s por lado sin dolor' },
+    { n:'3 · Control', dur:'3-4 semanas', ex:['hip-airplane','deadlift-single','squat-box','band-lateral'],
+      hacer:'Control rotacional y fuerza a una pierna.',
+      crit:'Avión de cadera 8 por lado controlado' },
+    { n:'4 · Volver', dur:'continuo', ex:['copenhagen','hip-airplane','glute-bridge'],
+      hacer:'Progresa rango y carga con paciencia.',
+      crit:'Mantenimiento' } ]},
+{ id:'isquios', n:'Isquiotibiales', s:'Tirón o molestia en la parte posterior del muslo',
+  causa:'Suele ser una sobrecarga o rotura de bajo grado por esfuerzo a alta velocidad, o una tendinopatía proximal por compresión. El trabajo excéntrico es el pilar del tratamiento y de la prevención.',
+  red:'Dolor súbito con chasquido, hematoma extenso, imposibilidad de caminar, dolor al sentarse muy localizado en el isquion.',
+  fases:[
+    { n:'1 · Calmar', dur:'1-2 semanas', ex:['glute-bridge','cat-cow','psoas-lunge'],
+      hacer:'Nada de sprints ni estiramientos agresivos: estirar un isquio irritado lo empeora. Camina y pedalea suave.',
+      crit:'Caminar rápido sin molestia' },
+    { n:'2 · Cargar', dur:'3-4 semanas', ex:['glute-bridge','band-goodmorning','deadlift-single'],
+      hacer:'Fuerza progresiva en rango corto, sin buscar estiramiento.',
+      crit:'Peso muerto a una pierna 3×8 sin reacción' },
+    { n:'3 · Excéntrico', dur:'3-4 semanas', ex:['nordic-curl','deadlift-single','hinge'],
+      hacer:'Introduce el curl nórdico. Empieza con muy poco recorrido.',
+      crit:'Nórdicos con control sin dolor posterior' },
+    { n:'4 · Velocidad', dur:'continuo', ex:['nordic-curl','broad-jump','glute-bridge'],
+      hacer:'Reintroduce carrera rápida de forma progresiva. Mantén nórdicos: es lo que evita la recaída.',
+      crit:'Mantén nórdicos 1-2 veces por semana siempre' } ]},
+{ id:'tobillo', n:'Tobillo', s:'Tras un esguince o inestabilidad al pisar',
+  causa:'El esguince daña los ligamentos, pero lo que hace que se repita es el déficit propioceptivo que queda. Sin reentrenar el equilibrio, la tasa de recaída es alta.',
+  red:'Imposibilidad de apoyar el pie, deformidad, dolor óseo puntual (descartar fractura), hinchazón que no baja.',
+  fases:[
+    { n:'1 · Movilidad', dur:'1-2 semanas', ex:['ankle-alphabet','foot-roll','toe-splay'],
+      hacer:'Recupera rango sin dolor. Camina lo que toleres.',
+      crit:'Rango completo sin dolor' },
+    { n:'2 · Propiocepción', dur:'2-4 semanas', ex:['balance-1leg','ankle-balance-eyes','short-foot','calf-soleus'],
+      hacer:'Equilibrio a diario. Es la parte que más previene la recaída.',
+      crit:'30 s a la pata coja con ojos cerrados' },
+    { n:'3 · Fuerza e impacto', dur:'2-4 semanas', ex:['calf-eccentric','pogo','heel-toe-walk','skater'],
+      hacer:'Añade fuerza de gemelo y saltos suaves. El lateral es clave aquí.',
+      crit:'Saltos de patinador estables sin dolor' },
+    { n:'4 · Volver', dur:'continuo', ex:['ankle-balance-eyes','calf-eccentric','skater'],
+      hacer:'Vuelve al deporte progresivamente. Mantén el equilibrio como rutina.',
+      crit:'Mantenimiento' } ]},
+{ id:'dorsal', n:'Espalda alta / dorsal', s:'Rigidez o molestia entre los omóplatos',
+  causa:'Rigidez en flexión por postura mantenida y falta de fuerza en la musculatura escapular. La columna dorsal está hecha para rotar y extenderse, y pasa el día sin hacer ninguna de las dos.',
+  red:'Dolor irradiado en cinturón, dolor que no cambia con la postura ni el movimiento, síntomas generales acompañantes.',
+  fases:[
+    { n:'1 · Movilizar', dur:'1-2 semanas', ex:['thoracic-rot','cat-cow','wall-slide'],
+      hacer:'Movilidad dorsal a diario. Levántate cada media hora.',
+      crit:'Rotar el tronco cómodo a ambos lados' },
+    { n:'2 · Fortalecer', dur:'2-4 semanas', ex:['band-facepull','scap-pushup','row-inverted','band-pullapart'],
+      hacer:'Trabajo escapular y de tracción 3 veces por semana.',
+      crit:'3×12 remo invertido con control escapular' },
+    { n:'3 · Cargar', dur:'3-4 semanas', ex:['kb-row','pullup-negative','kb-carry'],
+      hacer:'Progresa carga en tracción.',
+      crit:'Remo con peso sin molestia' },
+    { n:'4 · Mantener', dur:'continuo', ex:['thoracic-rot','band-facepull','kb-row'],
+      hacer:'Por cada empuje, una tracción. Regla permanente.',
+      crit:'Mantenimiento' } ]}
+)
+
+/* ── OBJETIVOS ───────────────────────────────────────────────────
+ * Cada objetivo define una periodización propia: fases por meses,
+ * foco de cada fase y prioridades cuando no llegas a todo.
+ */
+const GOALS = [
+  { id:'general', n:'Ponerme en forma', s:'Mejorar todas las capacidades', meses:6,
+    intro:'Un plan equilibrado que toca fuerza, movilidad, control y resistencia. Sin especializar: mejor en todo.',
+    prior:['Fuerza 2-3 veces por semana','Movilidad casi a diario, aunque sean 8 min','Algo de cardio suave 2 veces por semana','Descanso: sin él no hay adaptación'],
+    fases:[
+      {n:1,name:'Fundamentos',meses:'1-2',focus:['movilidad','control'],min:20,ses:3,
+       why:'Primero el patrón y el rango. Cargar sobre un movimiento mal hecho es cómo aparecen las lesiones.'},
+      {n:2,name:'Construcción',meses:'3-4',focus:['fuerza','movilidad'],min:30,ses:4,
+       why:'Ahora se carga. El rango ganado hay que cargarlo para conservarlo.'},
+      {n:3,name:'Integración',meses:'5-6',focus:['fuerza','potencia','resistencia'],min:35,ses:4,
+       why:'Se mezclan capacidades como en la vida real: fuerza con potencia, movilidad bajo fatiga.'} ]},
+  { id:'fuerza', n:'Ganar fuerza', s:'Progresiones hasta dominada y pistol', meses:6,
+    intro:'Prioridad a la fuerza relativa: mover tu propio cuerpo. Movilidad como soporte, no como protagonista.',
+    prior:['Fuerza 3-4 veces por semana','Progresar los 5 patrones básicos','Movilidad como calentamiento','Comer y dormir suficiente: sin eso no hay músculo'],
+    fases:[
+      {n:1,name:'Base y técnica',meses:'1-2',focus:['fuerza','control'],min:25,ses:3,
+       why:'Aprender los patrones con volumen moderado y técnica limpia antes de buscar intensidad.'},
+      {n:2,name:'Volumen',meses:'3-4',focus:['fuerza','control'],min:35,ses:4,
+       why:'Más series y repeticiones. El volumen es el principal motor de la hipertrofia y de la fuerza inicial.'},
+      {n:3,name:'Intensidad',meses:'5-6',focus:['fuerza','potencia'],min:35,ses:4,
+       why:'Menos repeticiones y más dificultad: progresiones avanzadas y trabajo explosivo.'} ]},
+  { id:'movilidad', n:'Ganar movilidad', s:'Recuperar rango perdido', meses:4,
+    intro:'Para quien está rígido de años de silla. Rango primero, y luego fuerza en ese rango para que se quede.',
+    prior:['Movilidad a diario, aunque sean 10 min','Fuerza en rangos largos 2 veces por semana','Paciencia: el tejido conectivo tarda meses','Constancia por encima de intensidad'],
+    fases:[
+      {n:1,name:'Desbloquear',meses:'1-2',focus:['movilidad'],min:20,ses:5,
+       why:'Frecuencia alta y baja intensidad. La movilidad responde a la repetición diaria, no a sesiones épicas.'},
+      {n:2,name:'Cargar el rango',meses:'3-4',focus:['movilidad','fuerza','control'],min:30,ses:4,
+       why:'El estiramiento pasivo da rango temporal; cargarlo es lo que hace que el cuerpo lo conserve.'} ]},
+  { id:'triatlon', n:'Triatlón', s:'Fuerza y prevención para las 3 disciplinas', meses:11,
+    intro:'La fuerza al servicio del rendimiento y, sobre todo, de no lesionarte. La app cubre fuerza, movilidad y prevención; nado, bici y carrera los registras tú.',
+    prior:['Una sesión de fuerza es lo primero que se abandona y lo que más protege','Bici: volumen aeróbico sin impacto','Natación: técnica antes que volumen','Correr: lo último si vienes con base de carrera'],
+    fases:[
+      {n:1,name:'Cimientos',meses:'1-3',focus:['movilidad','control'],min:20,ses:3,
+       why:'Arreglar déficits antes de subir volumen. Aquí es donde se previene la lesión de toda la temporada.'},
+      {n:2,name:'Construcción',meses:'4-6',focus:['fuerza','movilidad'],min:25,ses:4,
+       why:'Cargar sobre una base ya sólida, y empezar los ladrillos (bici + carrera seguidos).'},
+      {n:3,name:'Específico',meses:'7-9',focus:['fuerza','potencia'],min:25,ses:3,
+       why:'La fuerza pasa a mantenimiento: el protagonismo se lo llevan las tres disciplinas.'},
+      {n:4,name:'Afinar',meses:'10-11',focus:['movilidad','control'],min:20,ses:2,
+       why:'Llegar fresco, no llegar fuerte. En las últimas semanas se gana descansando.'} ]},
+  { id:'correr', n:'Correr mejor', s:'Maratón, media o 10k sin lesionarme', meses:6,
+    intro:'El corredor se lesiona por falta de fuerza, no por falta de kilómetros. Esto es el complemento que casi nadie hace.',
+    prior:['Fuerza 2 veces por semana, innegociable','Glúteo medio y sóleo: los dos grandes olvidados','Movilidad de cadera y tobillo','No subir volumen más de un 10% semanal'],
+    fases:[
+      {n:1,name:'Estructura',meses:'1-2',focus:['control','movilidad'],min:20,ses:3,
+       why:'Estabilidad de cadera y tobillo antes de añadir kilómetros. Es lo que evita cintilla y rodilla.'},
+      {n:2,name:'Fuerza',meses:'3-4',focus:['fuerza','control'],min:25,ses:3,
+       why:'Fuerza de piernas y core. Mejora la economía de carrera y la tolerancia al impacto.'},
+      {n:3,name:'Elasticidad',meses:'5-6',focus:['potencia','fuerza'],min:25,ses:3,
+       why:'Trabajo elástico y pliométrico: devuelve energía en cada zancada y mejora la economía.'} ]},
+  { id:'volver', n:'Volver a entrenar', s:'Retomar tras mucho tiempo parado', meses:3,
+    intro:'Progresión muy suave. El error clásico al volver es empezar donde lo dejaste, y acabar lesionado en dos semanas.',
+    prior:['Empezar por debajo de lo que crees que puedes','Constancia antes que intensidad','Movilidad diaria, fuerza 2 veces por semana','Si dudas entre hacer más o menos: menos'],
+    fases:[
+      {n:1,name:'Reactivar',meses:'1',focus:['movilidad','control'],min:15,ses:3,
+       why:'Volver a moverse sin agujetas incapacitantes. El objetivo es crear el hábito, no el estímulo.'},
+      {n:2,name:'Construir',meses:'2',focus:['fuerza','movilidad','control'],min:20,ses:3,
+       why:'Introducir carga de forma gradual, ya con el hábito instalado.'},
+      {n:3,name:'Consolidar',meses:'3',focus:['fuerza','control','resistencia'],min:25,ses:4,
+       why:'Subir volumen y variedad. A partir de aquí puedes elegir otro objetivo.'} ]},
+]
+
+/* ── Ejercicios específicos por deporte ─────────────────────── */
+EX.push(
+{id:'split-squat-heavy',cap:'fuerza',pat:'rodilla',mat:'peso',lvl:2,seg:60,sets:4,reps:8,
+ n:'Zancada búlgara con peso',s:'Fuerza unilateral para pedalear',
+ why:'El pedaleo es unilateral y alterno. Cargar cada pierna por separado corrige asimetrías y desarrolla la fuerza que se traduce en eficiencia de pedaleo, uno de los efectos demostrados del entrenamiento de fuerza pesado en ciclistas.',
+ steps:['Pie de atrás elevado, peso en las manos','Baja recto sobre la pierna delantera','Tronco ligeramente inclinado','Empuja con el talón para subir'],
+ tip:'Cargas altas y pocas repeticiones: el objetivo es fuerza, no fatiga. Descansa 2-3 min entre series.'},
+{id:'step-up',cap:'fuerza',pat:'rodilla',mat:'peso',lvl:1,seg:55,sets:3,reps:10,
+ n:'Subida a cajón',s:'Extensión de cadera con transferencia',
+ why:'Replica el gesto de empujar el pedal en la fase de potencia y el de subir escalones o cuestas. Fuerza unilateral con muy poca carga axial sobre la columna.',
+ steps:['Cajón o banco a la altura de la rodilla','Sube apoyando todo el pie, sin impulso del pie de atrás','Extiende la cadera arriba','Baja controlado, sin dejarte caer'],
+ tip:'Si te impulsas con la pierna de abajo, has hecho trampa. El trabajo lo hace la pierna de arriba.'},
+{id:'calf-raise-heavy',cap:'fuerza',pat:'rodilla',mat:'peso',lvl:2,seg:55,sets:4,reps:12,
+ n:'Elevación de talón con carga',s:'Transferencia en el pedal y la zancada',
+ why:'El gemelo y el sóleo transmiten la fuerza al pedal y absorben el impacto al correr. Es de los grupos que más se sobrecargan y menos se entrenan de forma específica.',
+ steps:['De pie sobre un escalón, peso en las manos','Talones por debajo del nivel del escalón','Sube al máximo y aguanta 1 s','Baja lento hasta el estiramiento'],
+ tip:'Haz una serie con la rodilla recta (gemelo) y otra doblada (sóleo). Trabajan a rangos distintos.'},
+{id:'pallof',cap:'control',pat:'core',mat:'goma',lvl:2,seg:55,sets:3,reps:10,
+ n:'Press Pallof',s:'Antirrotación pura',
+ why:'El core de un ciclista o nadador debe impedir que el tronco rote mientras las piernas o los brazos trabajan alternos. Es exactamente lo que entrena este ejercicio.',
+ steps:['Goma anclada al lado, a la altura del pecho','De pie perpendicular, manos en el centro','Extiende los brazos al frente resistiendo la rotación','Aguanta 3 s y vuelve'],
+ tip:'Cuanto más lejos extiendes, más palanca. Si el tronco gira, acerca las manos al pecho.'},
+{id:'lat-pulldown-band',cap:'fuerza',pat:'traccion',mat:'goma',lvl:1,seg:55,sets:3,reps:15,
+ n:'Jalón con goma',s:'El gesto de la brazada',
+ why:'Reproduce la fase propulsiva de la brazada de crol: dorsal ancho tirando desde arriba. La goma da resistencia creciente, similar al agarre progresivo en el agua.',
+ steps:['Goma anclada arriba, de rodillas o de pie','Tira llevando los codos abajo y atrás','Inicia con el omóplato, no con la mano','Vuelve despacio resistiendo'],
+ tip:'El codo va alto al inicio y baja pegado al cuerpo: es el patrón del agarre en el agua.'},
+{id:'streamline-hold',cap:'control',pat:'core',mat:'none',lvl:1,seg:50,
+ n:'Posición hidrodinámica',s:'La postura que reduce resistencia',
+ why:'La posición de deslizamiento requiere elevación de hombro completa con el core apretado. Practicarla en seco mejora la posición en el agua, que importa más que la fuerza para nadar rápido.',
+ steps:['Tumbado boca abajo, brazos extendidos y juntos','Una mano sobre la otra, brazos pegados a las orejas','Aprieta glúteos y abdomen, cuerpo en línea','Mantén 20-30 s'],
+ tip:'Si no puedes juntar los brazos con las orejas sin arquear la lumbar, te falta movilidad de hombro y dorsal.'},
+{id:'hip-thrust',cap:'fuerza',pat:'cadera',mat:'peso',lvl:2,seg:60,sets:4,reps:10,
+ n:'Empuje de cadera',s:'Extensión de cadera con carga',
+ why:'Es el ejercicio que más carga permite en extensión horizontal de cadera. Transferencia directa a esprint, sentadilla y aceleración, con poca demanda sobre la lumbar comparado con el peso muerto.',
+ steps:['Espalda apoyada en un banco, peso sobre la cadera','Pies apoyados, rodillas a 90 grados arriba','Empuja la cadera arriba apretando el glúteo','Barbilla al pecho: no arquees la lumbar'],
+ tip:'La mirada acompaña a la cadera. Si miras al techo arqueando el cuello, la lumbar se arquea también.'},
+{id:'bear-hold',cap:'control',pat:'core',mat:'none',lvl:1,seg:45,
+ n:'Posición de oso',s:'Core en cuadrupedia',
+ why:'Mantener las rodillas a un centímetro del suelo activa todo el core en posición neutra. Es una plancha más exigente y con mejor transferencia a los deportes en flexión de cadera.',
+ steps:['A cuatro apoyos, manos bajo hombros, rodillas bajo caderas','Despega las rodillas un centímetro','Espalda plana, sin subir el culo','Respira con normalidad 30 s'],
+ tip:'Pon algo en la espalda baja: si se cae, has perdido la posición neutra.'},
+{id:'sled-push-sim',cap:'resistencia',pat:'rodilla',mat:'none',lvl:2,seg:45,
+ n:'Empuje isométrico en pared',s:'Fuerza-resistencia de piernas',
+ why:'Simula el empuje sostenido de una subida larga o un esprint. Genera tensión alta sin material y sin impacto, útil para acumular trabajo de piernas cuando no puedes cargar peso.',
+ steps:['Manos en la pared, cuerpo inclinado','Una pierna atrás extendida, la otra flexionada','Empuja la pared con fuerza sostenida 20 s','Cambia de pierna'],
+ tip:'Empuja como si quisieras mover la pared. La tensión debe notarse en glúteo y gemelo.'}
+)
+
+/* ── PLANES POR DEPORTE ──────────────────────────────────────── */
+GOALS.push(
+{ id:'ciclismo', n:'Ciclismo (carretera)', s:'Fuerza para pedalear más y mejor', meses:6,
+  intro:'La fuerza pesada mejora la eficiencia de pedaleo y la potencia anaeróbica en ciclistas entrenados, sin penalizar el VO2máx. Esto es el complemento de gimnasio; las horas de bici las pones tú.',
+  prior:['Fuerza 2 veces por semana en pretemporada, 1 en temporada','Cargas altas y pocas repeticiones: buscas fuerza, no fatiga','Separa fuerza y bici 6-8 h, o en días distintos','Movilidad de cadera y dorsal: la posición aerodinámica la castiga'],
+  fases:[
+    {n:1,name:'Adaptación',meses:'1-2',focus:['movilidad','control'],min:25,ses:3,
+     why:'La postura sobre la bici acorta flexores de cadera y cierra el pecho. Antes de cargar hay que devolver rango y estabilizar el core.'},
+    {n:2,name:'Fuerza máxima',meses:'3-4',focus:['fuerza'],min:35,ses:2,
+     why:'Cargas altas y pocas repeticiones. Es la fase que mejora la eficiencia de pedaleo, y va en pretemporada porque genera fatiga.'},
+    {n:3,name:'Transferencia',meses:'5-6',focus:['fuerza','potencia'],min:30,ses:2,
+     why:'Menos volumen de gimnasio y más explosividad. La fuerza pasa a mantenimiento mientras la bici manda.'} ]},
+{ id:'btt', n:'BTT / Montaña', s:'Fuerza, control y tren superior', meses:6,
+  intro:'El BTT no es ciclismo de carretera con barro: exige tren superior, core y capacidad de absorber impactos. El plan añade control y potencia que la carretera no necesita.',
+  prior:['Core y tren superior: en BTT sujetas la bici, no solo pedaleas','Fuerza de agarre: se agota antes que las piernas en descensos largos','Trabajo unilateral y de equilibrio para el terreno irregular','Movilidad de muñeca y hombro por las vibraciones'],
+  fases:[
+    {n:1,name:'Base y control',meses:'1-2',focus:['control','movilidad'],min:25,ses:3,
+     why:'Estabilidad de core y hombro, y movilidad de muñeca. El terreno irregular exige un cuerpo que corrija rápido.'},
+    {n:2,name:'Fuerza global',meses:'3-4',focus:['fuerza','control'],min:35,ses:3,
+     why:'Piernas, espalda y agarre. En BTT el tren superior trabaja tanto como el inferior.'},
+    {n:3,name:'Potencia y absorción',meses:'5-6',focus:['potencia','fuerza'],min:30,ses:3,
+     why:'Arrancadas explosivas y capacidad de absorber impactos en las caídas de rueda.'} ]},
+{ id:'natacion', n:'Natación', s:'Trabajo en seco para nadar mejor',  meses:6,
+  intro:'El hombro es la zona de lesión número uno del nadador. Este plan combina propulsión (dorsal y core) con prevención de hombro, que es lo que sostiene toda la temporada.',
+  prior:['Prevención de hombro SIEMPRE, no solo cuando duele','Core: la posición en el agua importa más que la fuerza bruta','Movilidad dorsal y de hombro para la posición hidrodinámica','Equilibra: por cada empuje, dos tracciones'],
+  fases:[
+    {n:1,name:'Hombro sano',meses:'1-2',focus:['control','movilidad'],min:25,ses:3,
+     why:'Control escapular y rotadores externos antes de nada. Nadar carga rotación interna: sin equilibrar, aparece el pinzamiento.'},
+    {n:2,name:'Propulsión',meses:'3-4',focus:['fuerza','control'],min:30,ses:3,
+     why:'Dorsal, core y cadena posterior: lo que genera propulsión y mantiene la línea del cuerpo.'},
+    {n:3,name:'Potencia',meses:'5-6',focus:['potencia','fuerza'],min:30,ses:3,
+     why:'Salidas y virajes son actos de potencia. Aquí se entrena la explosividad que ahorra décimas.'} ]},
+{ id:'trail', n:'Trail / Montaña a pie', s:'Bajadas, tobillos y desnivel', meses:6,
+  intro:'El trail castiga distinto: bajadas excéntricas, terreno irregular y tobillos. El plan prioriza absorción de impacto y estabilidad, no solo motor aeróbico.',
+  prior:['Excéntrico de cuádriceps: las bajadas son lo que destroza','Propiocepción de tobillo, a diario si puedes','Core para la estabilidad en terreno técnico','Sube desnivel progresivamente, no de golpe'],
+  fases:[
+    {n:1,name:'Tobillo y base',meses:'1-2',focus:['control','movilidad'],min:25,ses:3,
+     why:'El tobillo es lo primero que falla en terreno irregular. Propiocepción antes que fuerza.'},
+    {n:2,name:'Fuerza excéntrica',meses:'3-4',focus:['fuerza','control'],min:30,ses:3,
+     why:'Bajar castiga más que subir. La fuerza excéntrica de cuádriceps es lo que permite bajar sin destrozarse.'},
+    {n:3,name:'Terreno',meses:'5-6',focus:['potencia','fuerza'],min:30,ses:3,
+     why:'Saltos, cambios de dirección y absorción: lo que pide el terreno técnico real.'} ]},
+{ id:'equipo', n:'Deportes de equipo', s:'Fútbol, baloncesto, pádel…', meses:6,
+  intro:'Cambios de dirección, aceleraciones y frenadas. La lesión más común es la de isquiotibiales, y es de las más prevenibles que existen con el trabajo adecuado.',
+  prior:['Curl nórdico: la intervención con más evidencia contra la lesión de isquios','Trabajo lateral y de cambio de dirección','Aductores (Copenhagen) para prevenir pubalgia','Aterrizajes: saber caer previene rodilla y tobillo'],
+  fases:[
+    {n:1,name:'Base',meses:'1-2',focus:['control','movilidad'],min:25,ses:3,
+     why:'Estabilidad de cadera, rodilla y tobillo antes de meter velocidad y cambios de dirección.'},
+    {n:2,name:'Fuerza y prevención',meses:'3-4',focus:['fuerza','control'],min:30,ses:3,
+     why:'Nórdicos, aductores y fuerza unilateral: el paquete preventivo con mejor evidencia.'},
+    {n:3,name:'Potencia y agilidad',meses:'5-6',focus:['potencia','fuerza'],min:30,ses:3,
+     why:'Saltos, aterrizajes y trabajo lateral, que es donde ocurre la lesión sin contacto.'} ]},
+{ id:'escalada', n:'Escalada', s:'Agarre, tracción y hombro sano', meses:6,
+  intro:'La escalada crea un desequilibrio brutal: mucha tracción y nada de empuje. Este plan compensa para que el hombro y el codo aguanten los años.',
+  prior:['Compensa: por cada tracción de escalada, empuje en el plan','Prevención de codo: la epicondilitis es casi un rito de paso','Movilidad de muñeca y hombro','Core antiextensión para las placas desplomadas'],
+  fases:[
+    {n:1,name:'Compensar',meses:'1-2',focus:['control','movilidad'],min:25,ses:3,
+     why:'Rotadores externos, empuje y movilidad. Contrarrestar el patrón de tracción antes de añadir más.'},
+    {n:2,name:'Fuerza',meses:'3-4',focus:['fuerza','control'],min:30,ses:3,
+     why:'Fuerza global y de core. Escalar ya te da tracción: aquí se trabaja lo que falta.'},
+    {n:3,name:'Potencia',meses:'5-6',focus:['potencia','fuerza'],min:30,ses:3,
+     why:'Trabajo explosivo para lanzamientos y bloques.'} ]}
+)
+
+// Agrupación para que 12 objetivos no abrumen en pantalla
+const GOAL_GROUPS = [
+  { n:'Salud y forma física', ids:['general','fuerza','movilidad','volver'] },
+  { n:'Resistencia',          ids:['correr','ciclismo','natacion','triatlon'] },
+  { n:'Deporte específico',   ids:['btt','trail','equipo','escalada'] },
+]
+
+/* ── ACONDICIONAMIENTO ───────────────────────────────────────────
+ * Sistema completo: aeróbico, umbral, VO2máx, anaeróbico y potencia.
+ * Cada bloque estimula un sistema energético distinto.
+ *
+ * Referencias del enfoque:
+ *  · 4x4 noruego (NTNU, Helgerud 2007): ~7-9% de VO2máx en 8 semanas.
+ *    Intervalos largos mantienen más tiempo cerca del VO2máx que los cortos.
+ *  · Distribución polarizada: ~80% del volumen en baja intensidad.
+ *  · Anaeróbico: descansos largos, series cortas. Si no descansas, no es anaeróbico.
+ *
+ * modo: 'libre' = corre, pedalea, nada o rema, lo que prefieras.
+ */
+const COND = [
+  /* ── AERÓBICO BASE ── */
+  { id:'z2-base', sis:'aerobico', n:'Zona 2 continua', min:60, int:1, modo:'libre',
+    s:'El pilar del 80% del volumen',
+    why:'La intensidad baja y sostenida desarrolla densidad mitocondrial, capilarización y capacidad de usar grasa como combustible. Es aburrido y es lo que más importa: la mayoría entrena demasiado fuerte los días fáciles y demasiado flojo los días duros.',
+    steps:['10 min progresivos hasta llegar a zona 2','Mantén una intensidad conversacional: puedes hablar en frases completas','Si te falta el aire para hablar, vas demasiado fuerte','5-10 min de vuelta a la calma'],
+    tip:'La prueba de la conversación es más fiable que cualquier pulsómetro. Si no puedes charlar, no es zona 2.' },
+  { id:'z2-long', sis:'aerobico', n:'Salida larga', min:120, int:1, modo:'libre',
+    s:'Resistencia de base y eficiencia grasa',
+    why:'Las sesiones largas a baja intensidad mejoran la oxidación de grasas y la resistencia a la fatiga. Son el cimiento sobre el que se apoya todo lo demás: sin base aeróbica, la intensidad no cunde.',
+    steps:['Empieza muy suave, más de lo que crees necesario','Mantén intensidad conversacional todo el rato','Come e hidrátate si pasas de 90 min','Termina sintiendo que podrías seguir'],
+    tip:'Si terminas destrozado, no era una salida larga: era una carrera. El objetivo es acumular tiempo, no sufrir.' },
+  { id:'z2-fasted', sis:'aerobico', n:'Aeróbico en ayunas', min:45, int:1, modo:'libre',
+    s:'Flexibilidad metabólica',
+    why:'Entrenar suave con las reservas bajas potencia la señalización para usar grasa como sustrato. Es una herramienta puntual, no una norma: hecho a diario compromete la recuperación y la calidad de las sesiones duras.',
+    steps:['Por la mañana, antes de desayunar','Intensidad muy baja: conversacional cómoda','Máximo 45-60 min','Desayuna con proteína al terminar'],
+    tip:'Nunca hagas sesiones de intensidad en ayunas. Para eso necesitas glucógeno, y forzarlo solo trae sesiones malas.' },
+
+  /* ── UMBRAL ── */
+  { id:'tempo', sis:'umbral', n:'Tempo continuo', min:50, int:3, modo:'libre',
+    s:'Ritmo cómodamente duro',
+    why:'El trabajo sostenido cerca del umbral mejora la capacidad de mantener intensidades altas durante más tiempo. Es la intensidad que más se parece a una prueba de media distancia.',
+    steps:['15 min de calentamiento progresivo','20-30 min a ritmo "cómodamente duro"','Puedes decir frases cortas, no conversar','10 min de vuelta a la calma'],
+    tip:'El error clásico es ir demasiado fuerte. El tempo debe dejarte con la sensación de poder haber seguido 10 min más.' },
+  { id:'threshold-int', sis:'umbral', n:'Intervalos de umbral', min:60, int:3, modo:'libre',
+    s:'Bloques largos cerca del umbral',
+    why:'Fraccionar el trabajo de umbral permite acumular más tiempo total a esa intensidad que en continuo. Mejora la potencia sostenible, que es lo que determina el rendimiento en pruebas de 20-60 min.',
+    steps:['20 min de calentamiento','3 × 10 min a ritmo de umbral, 3 min suaves entre bloques','Mantén la misma intensidad en los tres','10 min de vuelta a la calma'],
+    tip:'Si el tercer bloque se te cae, saliste demasiado fuerte. Todos deben ser iguales: esa es la señal de haberlo hecho bien.' },
+  { id:'sweet-spot', sis:'umbral', n:'Sweet spot', min:55, int:3, modo:'libre',
+    s:'Justo por debajo del umbral',
+    why:'Trabajar ligeramente por debajo del umbral permite acumular mucho volumen de calidad con menos fatiga que en el umbral estricto. Es la zona con mejor relación estímulo/recuperación cuando el tiempo escasea.',
+    steps:['15 min de calentamiento','2 × 15 min a intensidad justo por debajo de umbral','5 min suaves entre bloques','10 min de vuelta a la calma'],
+    tip:'Debe costar, pero terminar cada bloque sin agonía. Si acabas reventado, era umbral, no sweet spot.' },
+
+  /* ── VO2 MÁX ── */
+  { id:'4x4', sis:'vo2', n:'4x4 noruego', min:40, int:5, modo:'libre',
+    s:'El protocolo más estudiado para VO2máx',
+    why:'Desarrollado en la universidad noruega NTNU, es el protocolo de intervalos con más respaldo para elevar el VO2máx: en torno a un 7-9% de mejora en 8 semanas haciéndolo 3 veces por semana. Los 4 minutos son clave: obligan al corazón a sostener el volumen sistólico máximo, algo que los sprints de 30 s no consiguen.',
+    steps:['10 min de calentamiento progresivo','4 × 4 min a intensidad muy alta (no máxima: debes completar los cuatro)','3 min de recuperación activa entre series','5 min de vuelta a la calma'],
+    tip:'El primer intervalo debe parecer casi fácil. Si el cuarto no lo terminas, empezaste demasiado fuerte: el objetivo es completar los cuatro iguales.' },
+  { id:'5x3', sis:'vo2', n:'5 × 3 minutos', min:38, int:5, modo:'libre',
+    s:'Variante algo más intensa',
+    why:'Intervalos algo más cortos permiten una intensidad ligeramente superior manteniendo un tiempo total elevado cerca del VO2máx. Buena alternativa al 4x4 para variar el estímulo.',
+    steps:['12 min de calentamiento','5 × 3 min a intensidad muy alta','2:30 de recuperación entre series','8 min suaves'],
+    tip:'Alterna esta sesión con el 4x4 en semanas distintas. Variar el estímulo evita el estancamiento.' },
+  { id:'30-30', sis:'vo2', n:'30-30 (Billat)', min:35, int:4, modo:'libre',
+    s:'Mucho tiempo a alta intensidad, más llevadero',
+    why:'Alternar 30 s fuertes y 30 s suaves permite acumular mucho tiempo cerca del VO2máx con una percepción de esfuerzo menor que los intervalos largos. Muy útil para quien no tolera bien los bloques de 4 min.',
+    steps:['15 min de calentamiento','2 bloques de 10 × (30 s fuerte / 30 s suave)','5 min entre bloques','10 min de vuelta a la calma'],
+    tip:'Los 30 s suaves son trote o pedaleo ligero, no parada. La recuperación activa mantiene el pulso alto, que es la gracia.' },
+
+  /* ── ANAERÓBICO ── */
+  { id:'sprints', sis:'anaerobico', n:'Sprints máximos', min:35, int:5, modo:'libre',
+    s:'Potencia y capacidad anaeróbica',
+    why:'Los esfuerzos máximos y breves con descanso completo entrenan la vía anaeróbica y la potencia neuromuscular. La clave es el descanso largo: si no te recuperas, bajas la intensidad y dejas de entrenar lo que querías.',
+    steps:['15 min de calentamiento con progresiones','6-8 × 15-20 s a intensidad MÁXIMA','2-3 min de recuperación completa entre sprints','10 min muy suaves'],
+    tip:'Si el último sprint es mucho más lento que el primero, descansa más o haz menos repeticiones. La calidad manda.' },
+  { id:'lactic', sis:'anaerobico', n:'Tolerancia al lactato', min:40, int:5, modo:'libre',
+    s:'Aguantar con las piernas ardiendo',
+    why:'Series de 60-90 s a intensidad muy alta con recuperación incompleta entrenan la capacidad de tamponar y tolerar la acidosis. Es una sesión dura: máximo una por semana y nunca en fase de descarga.',
+    steps:['15 min de calentamiento completo','5 × 90 s muy fuerte','90 s de recuperación (incompleta a propósito)','10-15 min de vuelta a la calma larga'],
+    tip:'Esta sesión deja fatiga. No la pongas el día antes de algo importante ni dos veces en la misma semana.' },
+  { id:'hill-sprints', sis:'anaerobico', n:'Cuestas cortas', min:35, int:5, modo:'libre',
+    s:'Potencia con menos impacto',
+    why:'La cuesta limita la velocidad y por tanto reduce el impacto y el riesgo de tirón, mientras exige potencia máxima. Es la forma más segura de introducir trabajo de velocidad en corredores.',
+    steps:['15 min de calentamiento','8 × 10-15 s subiendo a tope','Baja caminando: esa es la recuperación','10 min suaves al terminar'],
+    tip:'Ideal si vuelves de una lesión de isquios: la cuesta protege porque no puedes alcanzar velocidad máxima.' },
+
+  /* ── POTENCIA / CIRCUITOS ── */
+  { id:'emom', sis:'potencia', n:'EMOM de fuerza-resistencia', min:20, int:4, modo:'casa',
+    s:'Cada minuto en punto',
+    why:'Formato de densidad: haces un número fijo de repeticiones al inicio de cada minuto y descansas el resto. Mantiene la calidad técnica mientras sube la carga cardiovascular, y controla la fatiga mejor que un AMRAP.',
+    steps:['Elige 2 ejercicios y alterna cada minuto','Ejemplo: minuto 1, 10 sentadillas; minuto 2, 8 flexiones','Haz las repeticiones y descansa lo que sobre del minuto','20 minutos en total'],
+    tip:'Si no te sobran al menos 15 s de descanso, has elegido demasiadas repeticiones. Baja el número.' },
+  { id:'circuit', sis:'potencia', n:'Circuito metabólico', min:25, int:4, modo:'casa',
+    s:'Fuerza y cardio a la vez',
+    why:'Encadenar ejercicios con poco descanso mantiene el pulso alto mientras se trabaja la musculatura. Es eficiente cuando hay poco tiempo, aunque no sustituye ni al trabajo de fuerza pesada ni al aeróbico específico.',
+    steps:['5 ejercicios seguidos, 40 s de trabajo y 20 s de transición','Alterna tren superior e inferior para repartir la fatiga','Descansa 2 min al terminar la vuelta','3-4 vueltas'],
+    tip:'Alternar arriba y abajo permite mantener la intensidad sin que un grupo muscular se convierta en el limitante.' },
+  { id:'tabata', sis:'potencia', n:'Tabata', min:15, int:5, modo:'casa',
+    s:'4 minutos que duelen',
+    why:'20 s a intensidad máxima y 10 s de descanso, ocho veces. Es un protocolo muy intenso y muy breve: útil como estímulo puntual, pero no como base de un plan. Su fama excede lo que aporta si se abusa.',
+    steps:['10 min de calentamiento serio: es intenso desde el segundo uno','8 × (20 s máximo / 10 s descanso) = 4 min','Elige un ejercicio cíclico: bici, remo, burpees','5 min de vuelta a la calma'],
+    tip:'Un Tabata bien hecho basta como sesión de intensidad. Encadenar varios es una forma de acumular fatiga sin más beneficio.' },
+  { id:'active-recovery', sis:'aerobico', n:'Recuperación activa', min:30, int:1, modo:'libre',
+    s:'El día después de la sesión dura',
+    why:'El movimiento muy suave favorece el flujo sanguíneo sin añadir carga. No es entrenamiento: es facilitar la recuperación, y es lo que permite entrenar con calidad al día siguiente.',
+    steps:['Intensidad muy baja: debes poder cantar, no solo hablar','20-30 min','Termina con movilidad suave','Si dudas, ve más flojo'],
+    tip:'La tentación es acelerar porque te sientes bien. Resístela: convertir la recuperación en entrenamiento medio es el error más común.' },
+]
+
+const SISTEMAS = {
+  aerobico:   { n:'Aeróbico',    c:'#2ee6c8', d:'Base: el 80% de tu volumen debería estar aquí' },
+  umbral:     { n:'Umbral',      c:'#c9f24d', d:'Ritmo sostenible: mejora tu velocidad de crucero' },
+  vo2:        { n:'VO2 máx',     c:'#ff6a1f', d:'Intervalos largos: el mayor estímulo cardíaco' },
+  anaerobico: { n:'Anaeróbico',  c:'#b07cff', d:'Esfuerzos cortos y máximos con descanso largo' },
+  potencia:   { n:'Circuitos',   c:'#5ad2ff', d:'Fuerza y cardio combinados, sin material' },
+}
+
+/* ── ZONAS Y RITMOS ──────────────────────────────────────────────
+ * Calcula ritmos de entrenamiento a partir de una marca reciente,
+ * al estilo de las tablas clásicas (Daniels/Jack Tupper) simplificadas.
+ *
+ * REGLA IMPORTANTE: se calcula sobre lo que corres HOY, no sobre tu
+ * mejor marca histórica. Entrenar con ritmos de hace años es la vía
+ * rápida a la lesión al volver.
+ */
+
+// Factores sobre el ritmo umbral (min/km). Umbral ≈ ritmo sostenible ~1 h.
+const PACE_F = {
+  facil:    [1.28, 1.42],  // zona 2 conversacional
+  maraton:  [1.10, 1.14],
+  umbral:   [1.00, 1.03],
+  vo2:      [0.90, 0.94],
+  series:   [0.84, 0.89],
+}
+
+// Distancias de referencia -> factor para estimar ritmo umbral desde ese ritmo
+const RACE_TO_THRESHOLD = { '5k':1.06, '10k':1.02, 'media':0.97, 'maraton':0.93 }
+
+function mmss(sec){
+  sec=Math.round(sec);
+  var m=Math.floor(sec/60), s=sec%60;
+  return m+':'+(s<10?'0':'')+s;
+}
+function parsePace(txt){            // "4:15" -> 255
+  if(!txt) return null;
+  var p=String(txt).split(':');
+  if(p.length!==2) return null;
+  var m=parseInt(p[0],10), s=parseInt(p[1],10);
+  if(isNaN(m)||isNaN(s)) return null;
+  return m*60+s;
+}
+// Devuelve las zonas de carrera en seg/km a partir de una marca
+function runZones(racePaceSec, dist){
+  var thr = racePaceSec * (RACE_TO_THRESHOLD[dist]||1);
+  var z={};
+  Object.keys(PACE_F).forEach(function(k){
+    z[k]=[Math.round(thr*PACE_F[k][0]), Math.round(thr*PACE_F[k][1])];
+  });
+  z.umbralSec=Math.round(thr);
+  return z;
+}
+// Zonas de potencia en bici a partir del FTP
+function bikeZones(ftp){
+  return {
+    facil:[Math.round(ftp*0.55), Math.round(ftp*0.75)],
+    tempo:[Math.round(ftp*0.76), Math.round(ftp*0.87)],
+    umbral:[Math.round(ftp*0.88), Math.round(ftp*1.04)],
+    vo2:[Math.round(ftp*1.05), Math.round(ftp*1.20)],
+    anaerobico:[Math.round(ftp*1.21), Math.round(ftp*1.50)],
+  }
+}
+// Zonas de natación: ritmo por 100 m desde un test de 400 m
+function swimZones(t400sec){
+  var per100 = t400sec/4;
+  var thr = per100*1.03;
+  return {
+    facil:[Math.round(thr*1.12), Math.round(thr*1.20)],
+    aerobico:[Math.round(thr*1.05), Math.round(thr*1.11)],
+    umbral:[Math.round(thr*0.99), Math.round(thr*1.04)],
+    vo2:[Math.round(thr*0.93), Math.round(thr*0.98)],
+    sprint:[Math.round(thr*0.85), Math.round(thr*0.92)],
+  }
+}
+// Zonas de pulso desde FC máxima
+function hrZones(fcmax){
+  return {
+    z1:[Math.round(fcmax*0.50), Math.round(fcmax*0.60)],
+    z2:[Math.round(fcmax*0.60), Math.round(fcmax*0.70)],
+    z3:[Math.round(fcmax*0.70), Math.round(fcmax*0.80)],
+    z4:[Math.round(fcmax*0.80), Math.round(fcmax*0.90)],
+    z5:[Math.round(fcmax*0.90), Math.round(fcmax*1.00)],
+  }
+}
+
+/* ── PLANES POR DISTANCIA ───────────────────────────────────────
+ * Sesiones tipo Garmin: estructura fija, intensidad calculada.
+ * z: clave de zona · reps/dist/rec en metros o segundos.
+ */
+const RACE_PLANS = [
+  { id:'run5k', dep:'carrera', n:'5K', s:'Velocidad y umbral', sem:8,
+    intro:'El 5K exige un porcentaje alto de VO2máx. El plan combina series cortas rápidas con trabajo de umbral, sobre una base aeróbica.',
+    ses:[
+      { n:'Rodaje fácil', tipo:'continuo', min:40, z:'facil', d:'Base aeróbica conversacional' },
+      { n:'Series 400', tipo:'series', reps:8, dist:400, rec:'90 s trote', z:'series', d:'Velocidad específica' },
+      { n:'Series 1000', tipo:'series', reps:5, dist:1000, rec:'2 min trote', z:'vo2', d:'Potencia aeróbica' },
+      { n:'Tempo 20 min', tipo:'continuo', min:20, z:'umbral', d:'Umbral continuo, con 15 min de calentamiento' },
+      { n:'Tirada larga', tipo:'continuo', min:70, z:'facil', d:'Volumen aeróbico' },
+    ]},
+  { id:'run10k', dep:'carrera', n:'10K', s:'Umbral y resistencia', sem:10,
+    intro:'El 10K se corre justo por encima del umbral. El grueso del trabajo específico va ahí, con VO2máx para elevar el techo.',
+    ses:[
+      { n:'Rodaje fácil', tipo:'continuo', min:50, z:'facil', d:'Base aeróbica' },
+      { n:'Series 1000', tipo:'series', reps:6, dist:1000, rec:'2 min trote', z:'vo2', d:'Potencia aeróbica' },
+      { n:'Intervalos umbral', tipo:'series', reps:4, dist:2000, rec:'90 s trote', z:'umbral', d:'Ritmo específico de 10K' },
+      { n:'Tempo 30 min', tipo:'continuo', min:30, z:'umbral', d:'Umbral sostenido' },
+      { n:'Tirada larga', tipo:'continuo', min:80, z:'facil', d:'Resistencia aeróbica' },
+    ]},
+  { id:'runhalf', dep:'carrera', n:'Media maratón', s:'Resistencia al umbral', sem:12,
+    intro:'La media se corre ligeramente por debajo del umbral. Prioridad al volumen aeróbico y a bloques largos a ritmo objetivo.',
+    ses:[
+      { n:'Rodaje fácil', tipo:'continuo', min:55, z:'facil', d:'Base aeróbica' },
+      { n:'Bloques de umbral', tipo:'series', reps:3, dist:3000, rec:'3 min trote', z:'umbral', d:'Resistencia al umbral' },
+      { n:'Ritmo objetivo', tipo:'continuo', min:40, z:'maraton', d:'Ritmo de carrera sostenido' },
+      { n:'Series 1000', tipo:'series', reps:5, dist:1000, rec:'2 min', z:'vo2', d:'Mantener el techo aeróbico' },
+      { n:'Tirada larga', tipo:'continuo', min:110, z:'facil', d:'Hasta 18-20 km progresivos' },
+    ]},
+  { id:'runmara', dep:'carrera', n:'Maratón', s:'Volumen y ritmo objetivo', sem:16,
+    intro:'El maratón lo decide la base aeróbica y la eficiencia. Mucho volumen fácil, tiradas largas y bloques a ritmo objetivo.',
+    ses:[
+      { n:'Rodaje fácil', tipo:'continuo', min:60, z:'facil', d:'La mayoría de tus kilómetros' },
+      { n:'Ritmo maratón', tipo:'continuo', min:50, z:'maraton', d:'Ritmo objetivo sostenido' },
+      { n:'Bloques de umbral', tipo:'series', reps:3, dist:3000, rec:'3 min', z:'umbral', d:'Elevar el umbral' },
+      { n:'Tirada larga', tipo:'continuo', min:150, z:'facil', d:'Hasta 30-32 km' },
+      { n:'Larga con ritmo', tipo:'continuo', min:120, z:'maraton', d:'Últimos 30 min a ritmo objetivo' },
+    ]},
+  { id:'bike40', dep:'bici', n:'40 km / triatlón olímpico', s:'Potencia sostenida', sem:10,
+    intro:'El segmento de bici se corre cerca del umbral. Trabajo específico de potencia sostenible y capacidad de repetir esfuerzos.',
+    ses:[
+      { n:'Salida en Z2', tipo:'continuo', min:90, z:'facil', d:'Base aeróbica, cadencia 85-95' },
+      { n:'Sweet spot', tipo:'series', reps:3, dist:0, min:12, rec:'5 min suave', z:'tempo', d:'Volumen de calidad' },
+      { n:'Intervalos umbral', tipo:'series', reps:3, min:10, rec:'5 min', z:'umbral', d:'Potencia sostenible' },
+      { n:'VO2 4x4', tipo:'series', reps:4, min:4, rec:'3 min', z:'vo2', d:'Elevar el techo' },
+      { n:'Salida larga', tipo:'continuo', min:150, z:'facil', d:'Resistencia' },
+    ]},
+  { id:'bikegran', dep:'bici', n:'Marcha larga / gran fondo', s:'Resistencia y subidas', sem:12,
+    intro:'Las marchas largas exigen tolerar horas en zona baja-media y responder en los puertos. Volumen alto y trabajo específico de subida.',
+    ses:[
+      { n:'Salida larga', tipo:'continuo', min:210, z:'facil', d:'Progresa hasta 4-5 h' },
+      { n:'Subidas largas', tipo:'series', reps:4, min:8, rec:'bajada', z:'umbral', d:'Específico de puerto' },
+      { n:'Sweet spot', tipo:'series', reps:4, min:12, rec:'4 min', z:'tempo', d:'Calidad sostenida' },
+      { n:'Rodaje suave', tipo:'continuo', min:75, z:'facil', d:'Recuperación activa' },
+      { n:'Fuerza-resistencia', tipo:'series', reps:5, min:5, rec:'5 min', z:'tempo', d:'Cadencia baja 50-60 rpm en llano' },
+    ]},
+  { id:'swim1500', dep:'nado', n:'1500 m / aguas abiertas', s:'Ritmo continuo', sem:10,
+    intro:'Nadar 1500 m seguidos exige ritmo sostenible y economía. El plan combina técnica, series de umbral y continuos progresivos.',
+    ses:[
+      { n:'Técnica', tipo:'series', reps:8, dist:50, rec:'20 s', z:'facil', d:'Ejercicios de técnica, calidad sobre velocidad' },
+      { n:'Series 100', tipo:'series', reps:10, dist:100, rec:'20 s', z:'umbral', d:'Ritmo específico' },
+      { n:'Series 200', tipo:'series', reps:6, dist:200, rec:'30 s', z:'aerobico', d:'Resistencia aeróbica' },
+      { n:'Continuo', tipo:'continuo', dist:1500, z:'aerobico', d:'Simulacro de distancia' },
+      { n:'Velocidad', tipo:'series', reps:12, dist:25, rec:'30 s', z:'sprint', d:'Potencia y técnica a velocidad' },
+    ]},
+  { id:'swim400', dep:'nado', n:'400-800 m', s:'Velocidad y umbral', sem:8,
+    intro:'Distancias cortas con alto componente de umbral y VO2. Series más intensas y descansos más cortos.',
+    ses:[
+      { n:'Técnica', tipo:'series', reps:8, dist:50, rec:'20 s', z:'facil', d:'Base técnica' },
+      { n:'Series 50', tipo:'series', reps:16, dist:50, rec:'15 s', z:'vo2', d:'Potencia aeróbica' },
+      { n:'Series 100', tipo:'series', reps:8, dist:100, rec:'15 s', z:'umbral', d:'Umbral con poca recuperación' },
+      { n:'Series 200', tipo:'series', reps:4, dist:200, rec:'30 s', z:'umbral', d:'Resistencia al ritmo' },
+      { n:'Sprints', tipo:'series', reps:10, dist:25, rec:'45 s', z:'sprint', d:'Velocidad máxima' },
+    ]},
+]
