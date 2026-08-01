@@ -1,0 +1,34 @@
+FLUO — paquete listo para su propio repositorio
+================================================
+
+Estos 5 archivos son la app completa, con las rutas ya ajustadas
+para vivir en su propio repo (danimij.github.io/fluo/).
+
+CÓMO PUBLICARLA (5 minutos)
+---------------------------
+1. Ve a github.com/new
+2. Repository name:  fluo        <-- IMPORTANTE: en minúsculas y exactamente "fluo"
+   (el manifest está configurado para /fluo/; si le pones otro nombre,
+    hay que cambiar id, start_url y scope en manifest.json)
+3. Public. NO marques "Add a README".  ->  Create repository
+4. En el repo vacío: "uploading an existing file"
+5. Arrastra los 5 archivos (index.html, data.js, manifest.json,
+   icon-192.png, icon-512.png). NO subas este LEEME.
+6. Commit changes
+7. Settings -> Pages -> Source: "Deploy from a branch"
+   Branch: main  /  carpeta: / (root)  ->  Save
+8. Espera 1-2 minutos.  Ya está en:  https://danimij.github.io/fluo/
+
+DESPUÉS
+-------
+Avísame y actualizo los enlaces que apuntan a la versión antigua
+(/FaceO/fluo/) en INSPIRAPP, FACEO y la página del curso.
+
+La versión antigua seguirá funcionando: no rompe nada dejarla ahí
+mientras se hace el cambio.
+
+MANTENIMIENTO
+-------------
+Al cambiar data.js hay que subir el número de versión en index.html:
+   <script src="data.js?v=12"></script>   ->   v=13
+Si no, los navegadores servirán la copia antigua.
